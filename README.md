@@ -1,57 +1,5 @@
 # Banking-Application
-#Banking System Implementation:  Using MySQL Database and python  "Integrated a banking system with MySQL to store user data securely and manage  transactions in real-time.
-import streamlit as st
-
-
-# Helper functions for various number properties
-def is_armstrong(num):
-    num_str = str(num)
-    num_digits = len(num_str)
-    sum_of_powers = sum(int(digit) ** num_digits for digit in num_str)
-    return sum_of_powers == num
-
-
-def is_strong(num):
-    def factorial(n):
-        if n == 0 or n == 1:
-            return 1
-        else:
-            return n * factorial(n - 1)
-
-    return num == sum(factorial(int(digit)) for digit in str(num))
-
-
-def fibonacci_series(n):
-    series = [0, 1]
-    while series[-1] < n:
-        series.append(series[-1] + series[-2])
-    return series
-
-
-def is_perfect_square(num):
-    return int(num ** 0.5) ** 2 == num
-
-
-def is_perfect(num):
-    divisors_sum = sum(i for i in range(1, num) if num % i == 0)
-    return divisors_sum == num
-
-
-def is_happy(num):
-    def sum_of_squares(n):
-        return sum(int(digit) ** 2 for digit in str(n))
-
-    seen = set()
-    while num != 1 and num not in seen:
-        seen.add(num)
-        num = sum_of_squares(num)
-    return num == 1
-
-
-def is_harshad(num):
-    digit_sum = sum(int(digit) for digit in str(num))
-    return num % digit_sum == 0
-
+#Banking System Implementation:  Using MySQL Database and python  "Integrated a banking system with MySQL to store user data securely and manage  transactions in real-time
 
 # Streamlit UI components
 st.title('Number Programs')
