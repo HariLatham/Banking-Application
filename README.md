@@ -1,5 +1,7 @@
-# Banking-Application
-#Banking System Implementation:  Using MySQL Database and python  "Integrated a banking system with MySQL to store user data securely and manage  transactions in real-time
+# Web-Application
+#Number Programs implementation :  Using Python and Streamlit  
+#"Integrated a Number program system with Python and Streamlit to get proper output data in real-time
+
 
 # Streamlit UI components
 st.title('Number Programs')
